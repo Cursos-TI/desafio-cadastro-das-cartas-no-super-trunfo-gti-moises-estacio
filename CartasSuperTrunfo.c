@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 /*  Aluno: Moises Santos da Silva ;
-    Data: 30 mai 2025;
+    Data: 05 jun 2025;
     Desafio Super Trunfo - Países;
     Tema 1: Cadastro das Cartas;
-    Nivel mestre: Cadastro de 02 cartas do Super Trunfo. Calculo do Super Poder. Embate das 02 cartas cadastradas.
+    Nivel novato: Comparando Cartas do Super Trunfo
  */
 
 int main() {
@@ -29,6 +29,9 @@ int main() {
     float pibPerCap2;
     //Nivel mestre para carta 02
     float superPoder2;
+
+    //variável que aponta para atributo escolhido
+   // float atributo;
 
     //Obtendo valores da carta 01 do usuário
     printf("*************************************************\n");
@@ -126,25 +129,23 @@ int main() {
     printf("\n");
     printf("\n");   
 
-    //Implementacao nivel mestre
+    //Implementacao nivel novato para "Comparando Cartas do Super Trunfo"
     printf("*******************************************************************\n");   
-    printf("*  Comparação de Cartas (1:Sim, 0: Não):                          *\n");
+    printf("*  Comparação de Cartas  (População)                              *\n");
     printf("*                                                                 *\n"); 
 
     //Espaço vertical separador    
     printf("   \n");
-
-    printf("    População: Carta 1, venceu? %d\n",populacao1>populacao2) ;
-    printf("    Área: Carta 1, venceu? %d\n",areaKm2_1>areaKm2_2) ;
-    printf("    PIB: Carta 1, venceu? %d\n",PIB1>PIB2) ;
-    printf("    Número pontos turisticos: Carta 1, venceu? %d\n",numPontosTuristicos1>numPontosTuristicos2) ;
-
-    printf("    Densidade populacional: Carta 2, venceu? %d\n",densPop2<densPop1) ;
-    printf("    PIB per Capita: Carta 1, venceu? %d\n",pibPerCap1>pibPerCap2) ;
-    printf("    Super Poder: Carta 1, venceu? %d\n",superPoder1>superPoder2) ;
     
-
-    
+    //Implementação para o desafio novato : Comparando Cartas do Super Trunfo
+    printf("Carta 01- %s : %d \n",nomeCidade1, populacao1);
+    printf("Carta 02- %s : %d \n",nomeCidade2, populacao2);
+    if (populacao1>populacao2){
+       printf("Resultado: Carta 1 (%s) venceu!",nomeCidade1);
+    }else{
+       printf("Resultado: Carta 2 (%s) venceu!",nomeCidade2);
+    }
+        
     //Espaço vertical separador    
     printf("\n");
     printf("\n");   
